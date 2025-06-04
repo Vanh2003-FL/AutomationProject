@@ -15,8 +15,15 @@ public class Day14_Home_Alada_Test extends CommonBase {
     @Test
     public void RegisterSuccess() throws InterruptedException{
         Day14_Home_Alada factory = new Day14_Home_Alada(driver);
-        factory.RegisterFunction("VietAnh", "hihi@gmail.com","hihi@gmail.com", "abc123","abc123","0399215503");
+        factory.RegisterFunction("VietAnh", "hihFD@gmail.com","hih@gmail.com", "abc123","abc123","0399215503");
         Thread.sleep(2000);
         assertTrue(driver.findElement(By.xpath("//a[text()='Khóa học của tôi' and contains(@class,'khct')]")).isDisplayed());
+    }
+    @Test
+    public void updateInfo() throws InterruptedException {
+        Day14_Home_Alada factory1 = new Day14_Home_Alada(driver);
+        factory1.updateFunction("abc123", "abc123456", "abc123456");
+        Thread.sleep(2000);
+       // assertTrue("");
     }
 }
