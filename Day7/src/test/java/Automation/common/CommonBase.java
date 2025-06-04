@@ -8,7 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class CommonBase {
     public static WebDriver driver;
-    private int pageLoadTimeout = 40;
+    private int pageLoadTimeout = 30;
 
     public WebDriver initChromeBrowser(String URL) {
         System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\driver\\chromedriver.exe");
