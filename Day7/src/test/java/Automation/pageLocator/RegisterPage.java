@@ -34,7 +34,6 @@ public class RegisterPage extends CommonBase {
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Chờ tối đa 10 giây
         WebElement btnRegister = wait.until(ExpectedConditions.elementToBeClickable(CT_Account1.btnRegister)); // Chờ cho nút có thể click được
-        scrollToElement(btnRegister);
         btnRegister.click();
     }
 }

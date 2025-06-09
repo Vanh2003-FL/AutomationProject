@@ -20,9 +20,7 @@ public class Day12_Checkbox extends CommonBase
 
     @Test
     public void clickCheckbox_cach1(){
-
         WebElement chbSport = driver.findElement(By.xpath("//label[@for='hobbies-checkbox-1']"));
-        scrollToElement(chbSport);
         if(chbSport.isSelected()==false){
             chbSport.click();
             System.out.println("The sport checkbox has been checked");
@@ -31,7 +29,6 @@ public class Day12_Checkbox extends CommonBase
     @Test
     public void clickcheckBox_cach2(){
         List<WebElement> listlabelcheckBox = driver.findElements(By.xpath("//label[contains(@for,'hobbies-checkbox')]"));
-        scrollToElement(listlabelcheckBox.get(0));
         for (WebElement item:listlabelcheckBox){
             if(item.isSelected()==false){
                 item.click();

@@ -7,4 +7,8 @@ public class URL {
     public static  String ALADA_URLdk = "https://alada.vn/tai-khoan/dang-ky.html";
     public static String CRMSTAR_URL = "https://test-system.crmstar.vn/";
     public static String TEDU_URL = "https://tedu.com.vn/";
+    public static String GURU_URL= "https://demo.guru99.com/test/";
+    public  static String Auto_URL="https://demo.automationtesting.in/Alerts.html";
+    public static String DemoGURU= "https://demo.guru99.com/test/delete_customer.php";
+    public static String CRMStar = "http://test-system.crmstar.vn/user";
 }
