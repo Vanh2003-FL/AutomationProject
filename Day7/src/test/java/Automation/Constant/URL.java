@@ -11,4 +11,8 @@ public class URL {
     public  static String Auto_URL="https://demo.automationtesting.in/Alerts.html";
     public static String DemoGURU= "https://demo.guru99.com/test/delete_customer.php";
     public static String CRMStar = "http://test-system.crmstar.vn/user";
+    public static String DemoGuru2 = "https://demo.guru99.com/popup.php";
+    public  static String CodeStar = "https://codestar.vn/";
+    public static String DienMay = "https://dienmaynhapkhaugiare.com.vn/";
+    public static String Media = "https://mediamart.vn/";
 }
