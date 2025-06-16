@@ -20,7 +20,7 @@ public class Day16_CRMStar_Test extends CommonBase {
         type(By.name("email"),"admin@gmail.com");
         type(By.name("password"),"12345678");
         click(By.name("signin"));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        isAlertPresent();
         driver.switchTo().alert().accept();
         assertTrue(isElementPresent(By.xpath("//p[text()='Quản lý người dùng']")));
     }

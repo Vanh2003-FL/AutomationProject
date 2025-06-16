@@ -1,5 +1,6 @@
 package Automation.common;
 import java.time.Duration;
+import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -62,7 +63,15 @@ public class CommonBase {
             return false;
         }
     }
-
+    public boolean isAlertPresent() {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(initWaitTime));
+            wait.until(ExpectedConditions.alertIsPresent());
+            return true;
+        } catch (Exception ex) {
+            return false;
+        }
+    }
     // Thay cho webelement.click()
     public void click(By locator) {
         WebElement element = getElementPresentDOM(locator);
@@ -102,6 +111,26 @@ public class CommonBase {
         driver = new EdgeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(pageLoadTimeout, TimeUnit.SECONDS);
+        return driver;
+    }
+    public WebDriver setupBrowser(String browserName){
+        switch (browserName.trim().toLowerCase()){
+            case "chrome":
+                driver = initChromeBrowser();
+                System.out.println("Initilize chrome browser successfully...");
+                break;
+            case "firefox":
+                driver = initFirefoxBrowser();
+                System.out.println("Initilize firfox browser successfully...");
+                break;
+            case "edge":
+                driver = initEdgeBrowser();
+                System.out.println("Initilize edge browser successfully...");
+                break;
+            default:
+                driver = initChromeBrowser();
+                System.out.println("Invalid browser name => Initilize chrome browser successfully...");
+        }
         return driver;
     }
 }

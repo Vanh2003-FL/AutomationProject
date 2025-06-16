@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-15T19:41:01 GMT+07:00" name="Default Suite" finished-at="2025-06-15T19:41:15 GMT+07:00" duration-ms="14060">
+    <groups>
+    </groups>
+    <test started-at="2025-06-15T19:41:01 GMT+07:00" name="CommonBase.java" finished-at="2025-06-15T19:41:15 GMT+07:00" duration-ms="14060">
+      <class name="Automation.Testsuite.Day16_AutomationTesting_Alert_Test">
+        <test-method is-config="true" signature="openChromeBrowser()[pri:0, instance:Automation.Testsuite.Day16_AutomationTesting_Alert_Test@3c0be339]" started-at="2025-06-15T19:41:01 GMT+07:00" name="openChromeBrowser" finished-at="2025-06-15T19:41:07 GMT+07:00" duration-ms="5329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openChromeBrowser -->
+        <test-method signature="Alert_OK()[pri:0, instance:Automation.Testsuite.Day16_AutomationTesting_Alert_Test@3c0be339]" started-at="2025-06-15T19:41:07 GMT+07:00" name="Alert_OK" finished-at="2025-06-15T19:41:07 GMT+07:00" duration-ms="401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Alert_OK -->
+        <test-method is-config="true" signature="openChromeBrowser()[pri:0, instance:Automation.Testsuite.Day16_AutomationTesting_Alert_Test@3c0be339]" started-at="2025-06-15T19:41:07 GMT+07:00" name="openChromeBrowser" finished-at="2025-06-15T19:41:10 GMT+07:00" duration-ms="3335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openChromeBrowser -->
+        <test-method signature="Alert_Ok_Cancel()[pri:0, instance:Automation.Testsuite.Day16_AutomationTesting_Alert_Test@3c0be339]" started-at="2025-06-15T19:41:10 GMT+07:00" name="Alert_Ok_Cancel" finished-at="2025-06-15T19:41:11 GMT+07:00" duration-ms="504" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Alert_Ok_Cancel -->
+        <test-method is-config="true" signature="openChromeBrowser()[pri:0, instance:Automation.Testsuite.Day16_AutomationTesting_Alert_Test@3c0be339]" started-at="2025-06-15T19:41:11 GMT+07:00" name="openChromeBrowser" finished-at="2025-06-15T19:41:15 GMT+07:00" duration-ms="3561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openChromeBrowser -->
+        <test-method signature="Alert_With_Textbox()[pri:0, instance:Automation.Testsuite.Day16_AutomationTesting_Alert_Test@3c0be339]" started-at="2025-06-15T19:41:15 GMT+07:00" name="Alert_With_Textbox" finished-at="2025-06-15T19:41:15 GMT+07:00" duration-ms="863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Alert_With_Textbox -->
+      </class> <!-- Automation.Testsuite.Day16_AutomationTesting_Alert_Test -->
+    </test> <!-- CommonBase.java -->
+  </suite> <!-- Default Suite -->
+</testng-results>

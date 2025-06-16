@@ -3,7 +3,9 @@ package Automation.Testsuite;
 import Automation.Constant.URL;
 import Automation.common.CommonBase;
 import org.openqa.selenium.By;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
@@ -13,17 +15,21 @@ import static org.testng.Assert.assertTrue;
 
 public class Day16_AutomationTesting_Alert_Test extends CommonBase {
    @BeforeMethod
-    public void openChromeBrowser(){
-    driver = initChromeBrowser(URL.Auto_URL);
+   @Parameters("browser")
+
+    public void openBrowser(String browser){
+       driver =  setupBrowser(browser);
+       driver.get(URL.Auto_URL);
+//    driver = initChromeBrowser(URL.Auto_URL);
     }
-   // @Test
+   @Test
     public void Alert_OK(){
        click(By.xpath("//button[@class='btn btn-danger']"));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
        driver.switchTo().alert().accept();
        assertTrue(isElementPresent(By.xpath("//button[@class='btn btn-danger']")));
     }
-   // @Test
+    @Test
     public void Alert_Ok_Cancel(){
        click(By.xpath("//a[text()='Alert with OK & Cancel ']"));
        click(By.xpath("//button[text()='click the button to display a confirm box ']"));
@@ -40,6 +46,10 @@ public class Day16_AutomationTesting_Alert_Test extends CommonBase {
        driver.switchTo().alert().sendKeys("My Class April");
        driver.switchTo().alert().accept();
        assertTrue(isElementPresent(By.xpath("//p[text()='Hello My Class April How are you today']")));
+    }
+    @AfterMethod
+    public void closeDriver(){
+       driver.close();
     }
 
 
