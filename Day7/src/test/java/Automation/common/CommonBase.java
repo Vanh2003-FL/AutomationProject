@@ -14,9 +14,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class CommonBase {
-    private int  initWaitTime = 10;
+    private int  initWaitTime = 15;
     public static WebDriver driver;
-    private int pageLoadTimeout = 30;
+    private int pageLoadTimeout = 50;
 
     public WebDriver initChromeBrowser(String URL) {
         System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\driver\\chromedriver.exe");

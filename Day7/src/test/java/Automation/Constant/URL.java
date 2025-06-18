@@ -15,4 +15,6 @@ public class URL {
     public  static String CodeStar = "https://codestar.vn/";
     public static String DienMay = "https://dienmaynhapkhaugiare.com.vn/";
     public static String Media = "https://mediamart.vn/";
+    public static String BepAT = "https://bepantoan.vn/";
+
 }
